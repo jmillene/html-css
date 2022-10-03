@@ -1,6 +1,25 @@
+.grid{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 2fr 1fr;
+}
+
+.info{
+  place-self: start;
+  display: grid;
+  place-items: start;
+  gap: 20px;
+}
 body{
   font-family: Arial, Helvetica, sans-serif;
   margin: 40px;
+}
+.titulo{
+  grid-column: 1 / -1;
+}
+.foto{
+  grid-column: 1;
+  grid-row: 2 / 5;
 }
 .compra {
   background-color:  #a8f;
@@ -9,6 +28,7 @@ body{
   text-decoration: none;
   border-radius: 4px;
   font-size: 20px;
+  grid-column: 2;
 }
 p,
 span{
@@ -20,9 +40,6 @@ p{
 h1{
   font-size: 48px;
   line-height: 1px;
-}
-.grid{
-  display: grid;
 }
 .preco{
   background: #ddd;
