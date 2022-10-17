@@ -24,7 +24,7 @@ p{
   display: flex;
   gap: 20px;
 }
-menu a{
+.menu a{
   background: #ffffff;
   padding: 15px 30px;
 }
